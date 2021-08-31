@@ -1,0 +1,261 @@
+:root {
+    --titulo: 'Open Sans', sans-serif;
+    --subtitulo: 'Roboto Condensed', sans-serif;
+    --cuerpo-texto: 'PT Sans', sans-serif;
+    --background: #ffffff;
+    --color-texto: #000000;
+    --color-verde: #e8f00c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: var(--cuerpo-texto);
+    color: var(--color-texto);
+    background-color: var(--background);
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--titulo);
+    font-size: 7.5rem;
+    line-height: 8.4rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--subtitulo);
+    font-size: 2.0rem;
+    letter-spacing: .5rem;
+}
+
+.contenedor {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.inicio {
+    background-image: url(../img/bg-header.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.4rem;
+}
+
+ul {
+    list-style-type: none;
+    color: #fff;
+}
+
+li {
+    display: inline;
+    font-size: 2.6rem;
+    margin-right: 1rem;
+    padding: .2rem;
+}
+
+li:first-child {
+    border-bottom: 2px solid #fff;
+}
+
+.inicio-texto {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio-texto figure {
+    width: 100px;
+}
+
+.inicio-texto h1 {
+    color: var(--color-verde);
+}
+
+.inicio-texto h2 {
+    color: #fff;
+}
+
+.boton-contenedor {
+    text-align: center;
+    grid-column: 1 / 3;
+}
+
+.empezar {
+    margin-bottom: 10rem;
+    border: none;
+    background-color: var(--color-verde);
+    color: #666666;
+    font-weight: 700;
+    padding: .6rem 1.6rem;
+    font-size: 3rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.planes {
+    text-align: center;
+    padding-top: 8rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.planes h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.planes p {
+    font-size: 2rem;
+}
+
+.planes p span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boxes {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7rem;
+    justify-items: center;
+}
+
+.boxes figure {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes h4 {
+    color: var(--color-verde);
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 2.2rem;
+}
+
+.boxes figcaption {
+    margin-top: .4rem;
+    font-size: 2.2rem;
+}
+
+.destinos {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg-destinos.png);
+    background-size: cover;
+}
+
+.destinos h2 {
+    text-align: center;
+    color: var(--color-verde);
+    font-size: 4rem;
+    padding: 3rem 0;
+}
+
+.grilla-destinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.destino figure {
+    width: 190px;
+}
+
+.destino figcaption {
+    text-align: center;
+    color: #fff;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+
+.contacto {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--color-verde);
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+
+.contacto p {
+    font-size: 2rem;
+    margin-top: -.4rem;
+}
+
+.grid-form {
+    padding: 0 13rem;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3.4rem;
+}
+
+.grid-form input,
+.grid-form select {
+    padding: 0 1rem;
+    color: #888888;
+    font-size: 1.8rem;
+    border: 1px solid #888888;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.boton-enviar {
+    background-color: #898d0e;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    padding: .6rem 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    padding: 6rem;
+    font-size: 2rem;
+    line-height: 1.8;
+}
